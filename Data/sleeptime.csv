@@ -1,0 +1,113 @@
+id;day;optimal_bedtime;recommendation;status
+83129810-f3ae-472f-bd64-9419d0d56c29;2025-11-06;;;not_enough_nights
+ba533254-a1f2-4627-b319-32c5675fdeb1;2025-11-07;;;not_enough_nights
+42992503-9318-463f-85e0-8e11f22bf480;2025-11-08;;;not_enough_nights
+8297549d-9b52-4d9c-868e-254250de8a1f;2025-11-09;;;not_enough_nights
+f9a88712-9e70-46ff-96f0-0394ee230ceb;2025-11-10;;;not_enough_nights
+318b0da2-9f24-4aa4-8842-0a19fc2a4aa6;2025-11-11;;;not_enough_nights
+9131ed61-dd03-4691-8956-b162721cade4;2025-11-12;;;not_enough_nights
+6fd7ad82-514e-492e-b1c8-135dd86a03b1;2025-11-13;;;not_enough_nights
+c4326e60-59be-4992-b904-d8d8940bc088;2025-11-14;;;not_enough_nights
+c1caf566-87a9-489b-9069-e0ded24202f6;2025-11-16;;;not_enough_nights
+3f48a0b6-7eb7-446b-913f-808ca95e9aeb;2025-11-17;;;not_enough_nights
+bc071e14-9ca7-4d6c-8d39-33e057a3902d;2025-11-18;;;not_enough_nights
+668437ee-7920-40b9-8ce5-14b73afd3339;2025-11-19;;earlier_bedtime;only_recommended_found
+2419741e-c5ab-478b-a37a-4d731e61cd58;2025-11-20;;earlier_bedtime;only_recommended_found
+b42a051e-1b08-41fd-be94-8f17cca8317f;2025-11-22;;earlier_bedtime;only_recommended_found
+8aba39a3-95b6-4789-b262-70b122af89e6;2025-11-24;;earlier_bedtime;only_recommended_found
+0f33bddc-b9d5-40ce-bc59-2acd19a17fbb;2025-11-25;;earlier_bedtime;only_recommended_found
+129a89f3-f318-46bb-967e-1bff50eeb729;2025-11-29;;earlier_bedtime;only_recommended_found
+9f509c6d-ffc0-45c7-8207-9f83ad81299f;2025-12-02;;earlier_bedtime;only_recommended_found
+faab73a2-984b-424f-bf61-064351b71c32;2025-12-03;;earlier_bedtime;only_recommended_found
+14872e3d-fb43-4cd6-8bb0-ab3d4f1e6e12;2025-12-05;;earlier_bedtime;only_recommended_found
+de78148e-38ff-4a36-8f6f-0c1e982352b7;2025-12-09;;earlier_bedtime;only_recommended_found
+af467e14-ae77-4e56-b401-eca14e7ed6a1;2025-12-13;;earlier_bedtime;only_recommended_found
+a4b6951c-370a-44cf-8917-7f87401614d0;2025-12-19;;earlier_bedtime;only_recommended_found
+e9208d0e-11fe-4fac-89d7-1d06bae005e4;2025-12-26;;earlier_bedtime;only_recommended_found
+c6c1ea2a-c621-47be-95c8-dfaf32d3d2af;2025-12-27;"{""day_tz"": -28800, ""end_offset"": 4500, ""start_offset"": -900}";follow_optimal_bedtime;optimal_found
+186bc226-5239-4867-ac1b-f717adfde30d;2025-12-31;"{""day_tz"": -28800, ""end_offset"": 4500, ""start_offset"": -900}";follow_optimal_bedtime;optimal_found
+ca7c84b1-b418-41c3-9a5c-842458210006;2026-01-01;"{""day_tz"": -28800, ""end_offset"": 4500, ""start_offset"": -900}";follow_optimal_bedtime;optimal_found
+5713edf7-c05e-40f7-bdd3-e76e0bd888aa;2026-01-03;"{""day_tz"": -28800, ""end_offset"": 4500, ""start_offset"": -900}";follow_optimal_bedtime;optimal_found
+b12b3d7b-c10c-4e21-802e-5bf23d2e7a05;2026-01-04;;follow_optimal_bedtime;optimal_found
+ae2ca812-19b6-4631-b328-643ce29aa33d;2026-01-05;;follow_optimal_bedtime;optimal_found
+acdbedbc-d542-4a1f-bd3e-541a0fdfbf52;2026-01-07;;follow_optimal_bedtime;optimal_found
+e8511d98-d105-46e3-96dd-445b17fdbfb9;2026-01-08;;follow_optimal_bedtime;optimal_found
+5fb0eebb-9c03-4107-afbe-9c54b014348c;2026-01-09;;follow_optimal_bedtime;optimal_found
+cb9c488b-d12e-4738-ab35-c2f17325320f;2026-01-11;;follow_optimal_bedtime;optimal_found
+73f502ed-c6bd-4e4f-8cf3-a93b215d6731;2026-01-12;;follow_optimal_bedtime;optimal_found
+761eb1f7-39e5-4d54-8ff7-bbfab8f4b230;2026-01-13;;follow_optimal_bedtime;optimal_found
+09adf98e-f719-4472-8411-cbe7cbf95d9f;2026-01-15;"{""day_tz"": -28800, ""end_offset"": 1800, ""start_offset"": -2700}";follow_optimal_bedtime;optimal_found
+0661e1af-c306-4e18-8e05-b863a67b423d;2026-01-16;"{""day_tz"": -28800, ""end_offset"": 1800, ""start_offset"": -2700}";follow_optimal_bedtime;optimal_found
+f7bd9f6a-132e-4c13-a4e2-f7e298931143;2026-01-18;"{""day_tz"": -28800, ""end_offset"": 1800, ""start_offset"": -2700}";follow_optimal_bedtime;optimal_found
+eb44020d-66b1-4e83-8401-9c8dccb54ddf;2026-01-20;"{""day_tz"": -28800, ""end_offset"": 1800, ""start_offset"": -2700}";follow_optimal_bedtime;optimal_found
+cac440ce-6cd6-4fb6-a619-0f5d3d34bad4;2026-01-24;"{""day_tz"": -28800, ""end_offset"": 1800, ""start_offset"": -2700}";follow_optimal_bedtime;optimal_found
+ff18f6a0-f66c-4903-a83d-1593aefd716a;2026-01-25;"{""day_tz"": -28800, ""end_offset"": 1800, ""start_offset"": -2700}";follow_optimal_bedtime;optimal_found
+64c0e53a-e66a-421c-a7db-605adc926b3a;2026-01-27;"{""day_tz"": -28800, ""end_offset"": 1800, ""start_offset"": -2700}";follow_optimal_bedtime;optimal_found
+ed303e7a-b807-4b6a-8d7c-7fa11c97438c;2026-01-28;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+3bb58fe6-2c70-4ce7-a5dd-596e45d6b793;2026-01-29;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+0a66f971-6f9e-4257-bdaf-79f0a87bd7cb;2026-01-30;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+e154808e-ac62-408a-aaad-17a7e5d75587;2026-02-01;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+fd6b12c6-b1b6-4271-9685-71fccc3af176;2026-02-02;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+df5c6eb4-788b-424c-818d-981bc4e177fb;2026-02-04;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+c9f961b8-984c-4b9e-a6df-a9e73f933d52;2026-02-05;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+5b3222ca-69e3-4f17-8566-4e962a72ea97;2026-02-06;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+c82ec29d-6944-40f5-92b5-9df358e4c02d;2026-02-07;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+e522cdcc-c02f-49ea-adf5-debf9772db54;2026-02-08;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+339e4014-13be-42cb-9657-9335d139d4b6;2026-02-09;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+759c3e1c-dc4c-4125-9c5c-68fe1df95bbb;2026-02-11;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+3a3d89c6-7824-4ee6-946d-e256e8e82f48;2026-02-12;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+c59ef5a6-76d7-4796-8dad-6a6d1f2dc041;2026-02-13;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+e0708759-276d-45bc-b409-4a2f57ec5285;2026-02-14;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+8a0d359c-5396-44d0-ad39-8695e49691fd;2026-02-15;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+f9cc950f-8238-45ea-8962-602fb3f07d17;2026-02-16;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+7de19c17-1b8c-42bc-a62b-d90103b78364;2026-02-17;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+2f99d754-bb8a-499c-80ba-131fb8122925;2026-02-19;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -3600}";follow_optimal_bedtime;optimal_found
+8838444b-cacf-4520-aff5-b38160a81072;2026-02-20;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -4500}";follow_optimal_bedtime;optimal_found
+90b053c0-cf85-4865-8b20-6956c623bf0f;2026-02-21;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -4500}";follow_optimal_bedtime;optimal_found
+d61c14d5-983a-47c4-9f88-d3dfba4b027f;2026-02-22;"{""day_tz"": -28800, ""end_offset"": 900, ""start_offset"": -4500}";follow_optimal_bedtime;optimal_found
+1b22d9de-6e6d-400a-9d47-07d93537cd98;2026-02-24;"{""day_tz"": -28800, ""end_offset"": -900, ""start_offset"": -4500}";follow_optimal_bedtime;optimal_found
+789aab3a-a853-431c-8fef-fa53c0fb6be6;2026-02-26;"{""day_tz"": -28800, ""end_offset"": -900, ""start_offset"": -4500}";follow_optimal_bedtime;optimal_found
+f3aea2b6-60c1-4b2c-ae75-4689c5af9100;2026-02-27;"{""day_tz"": -28800, ""end_offset"": -900, ""start_offset"": -4500}";follow_optimal_bedtime;optimal_found
+1499c9e6-248e-4afe-a1b7-381a85c44197;2026-02-28;"{""day_tz"": -28800, ""end_offset"": -900, ""start_offset"": -4500}";follow_optimal_bedtime;optimal_found
+fbc3b077-6bf1-4a5b-8597-873b9795c19d;2026-03-01;"{""day_tz"": -28800, ""end_offset"": -900, ""start_offset"": -4500}";follow_optimal_bedtime;optimal_found
+7740d843-9ae1-485d-9315-2f75312423b5;2026-03-03;;follow_optimal_bedtime;optimal_found
+88c58306-9f51-497b-a3c3-d355337f3177;2026-03-04;;follow_optimal_bedtime;optimal_found
+98986e45-a6b1-48d7-9f0d-b47de865b85c;2026-03-05;;follow_optimal_bedtime;optimal_found
+84a19013-af70-40c1-94d5-2bdfe6140358;2026-03-07;;follow_optimal_bedtime;optimal_found
+5aa964d8-e570-44f0-82bf-9cde3f765529;2026-03-09;;follow_optimal_bedtime;optimal_found
+a3c17e72-8b26-4cb4-9590-3f35de76031e;2026-03-11;;follow_optimal_bedtime;optimal_found
+76ac6574-b86a-4874-9004-bed4b684ce00;2026-03-12;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -4500}";follow_optimal_bedtime;optimal_found
+e59e284e-0656-42e8-9e0a-604e411851e5;2026-03-15;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+fbe9efaa-611b-498b-ad8b-3b0f7439c37b;2026-03-16;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+aac2adeb-10a4-4348-928b-a2bb1ae2f609;2026-03-18;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+235920e4-50ed-422c-acb3-945fbdbda2aa;2026-03-19;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+63086d78-5f29-4815-bf56-b199bd7580f2;2026-03-20;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+fd4a4b64-bb0e-442d-8400-97f8cd9cd5e4;2026-03-21;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+5b264c3e-5321-4e1e-92f5-c606bdc243c2;2026-03-22;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+f14570b1-15d2-469e-912b-ccbc3e58ccf7;2026-03-23;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+a10ddb4b-eff6-4448-869e-cc1bfbebafb2;2026-03-24;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+99f04024-0c7a-4158-a9d5-2d46178e41d2;2026-03-25;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+b0ba1741-f76c-4fc5-a541-b2d208450863;2026-03-27;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+34b391be-e07c-479a-a978-367192c61b63;2026-03-28;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+63f5ba6a-365e-442b-90c2-92ed4b521f8f;2026-03-29;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+7d467259-a504-461c-a68a-58944dfb3c7e;2026-03-30;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+8c1f4af9-4edd-4de8-9f05-cd2987a34465;2026-03-31;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+705b53d0-f50c-47e0-9209-137bd6b0cf10;2026-04-01;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+1736a10c-00c0-42b9-847e-0a358a82f723;2026-04-02;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+3afb4e85-0236-4a8d-8d05-1eafce089618;2026-04-04;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+9648004a-0499-483a-b3c6-4faa6ccaddb5;2026-04-07;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+4562f735-4ff3-4562-8c0c-babbcb7cbc58;2026-04-08;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+63c87547-5595-4320-9a4d-90b7a611abe8;2026-04-09;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+de37dc4e-c96a-40a5-9205-f9a4da7d567e;2026-04-10;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+b2168169-aef7-488b-b89a-1d42b775326e;2026-04-11;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+0faf9ea3-ac0e-493d-88d3-5f185c9e7191;2026-04-14;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+d0cbd0f8-41fc-424b-b161-1cfb4a1c8298;2026-04-15;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+95b91b2b-bf14-416f-9dcc-64c27db8d26c;2026-04-16;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+0cd700ad-923f-4f46-a7ff-8c14ddfdc69d;2026-04-17;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+76b5390b-d984-4c2d-b241-e7213ef3d321;2026-04-18;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+838854f4-32e3-4880-949f-6602c99bf212;2026-04-19;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+c5d71300-2f31-429e-a37c-65be6aa5f06a;2026-04-20;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+6f0bb85d-3444-4086-b37a-0ae450585a9f;2026-04-21;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+602e4b42-fe08-4c9c-8525-a5596e2faed6;2026-04-22;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+65ddc637-2183-478b-806f-a458c48927c0;2026-04-23;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found
+336f776a-7105-4a49-a1d5-4ac94ab38729;2026-04-24;"{""day_tz"": -25200, ""end_offset"": -900, ""start_offset"": -6300}";follow_optimal_bedtime;optimal_found

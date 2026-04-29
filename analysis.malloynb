@@ -1,0 +1,8 @@
+>>>malloy
+import "oura.malloy"
+
+run: stress -> daily_summary
+run: stress -> monthly_trends
+run: stress -> stress_vs_recovery
+run: stress -> activity_detail
+run: stress -> best_worst_days

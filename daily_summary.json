@@ -1,0 +1,83 @@
+[
+  {
+    "day1": "2026-04-27T00:00:00.000Z",
+    "avg_sleep_score": null,
+    "avg_readiness_score": null,
+    "avg_activity_score": 66,
+    "avg_stress_high": 0,
+    "avg_recovery_high": 0
+  },
+  {
+    "day1": "2026-04-26T00:00:00.000Z",
+    "avg_sleep_score": null,
+    "avg_readiness_score": null,
+    "avg_activity_score": 66,
+    "avg_stress_high": 0,
+    "avg_recovery_high": 0
+  },
+  {
+    "day1": "2026-04-25T00:00:00.000Z",
+    "avg_sleep_score": 81,
+    "avg_readiness_score": 61,
+    "avg_activity_score": 73,
+    "avg_stress_high": 8100,
+    "avg_recovery_high": 3600
+  },
+  {
+    "day1": "2026-04-24T00:00:00.000Z",
+    "avg_sleep_score": 74,
+    "avg_readiness_score": 65,
+    "avg_activity_score": 78,
+    "avg_stress_high": 10800,
+    "avg_recovery_high": 1800
+  },
+  {
+    "day1": "2026-04-23T00:00:00.000Z",
+    "avg_sleep_score": 94,
+    "avg_readiness_score": 66,
+    "avg_activity_score": 77,
+    "avg_stress_high": 6300,
+    "avg_recovery_high": 6300
+  },
+  {
+    "day1": "2026-04-22T00:00:00.000Z",
+    "avg_sleep_score": 87,
+    "avg_readiness_score": 69,
+    "avg_activity_score": 84,
+    "avg_stress_high": 13500,
+    "avg_recovery_high": 1800
+  },
+  {
+    "day1": "2026-04-21T00:00:00.000Z",
+    "avg_sleep_score": 86,
+    "avg_readiness_score": 67,
+    "avg_activity_score": 75,
+    "avg_stress_high": 10800,
+    "avg_recovery_high": 5400
+  },
+  {
+    "day1": "2026-04-20T00:00:00.000Z",
+    "avg_sleep_score": 84,
+    "avg_readiness_score": 71,
+    "avg_activity_score": 79,
+    "avg_stress_high": 23400,
+    "avg_recovery_high": 0
+  },
+  {
+    "day1": "2026-04-19T00:00:00.000Z",
+    "avg_sleep_score": 70,
+    "avg_readiness_score": 39,
+    "avg_activity_score": 79,
+    "avg_stress_high": 14400,
+    "avg_recovery_high": 0
+  },
+  {
+    "day1": "2026-04-18T00:00:00.000Z",
+    "avg_sleep_score": 83,
+    "avg_readiness_score": 54,
+    "avg_activity_score": 81,
+    "avg_stress_high": 25200,
+    "avg_recovery_high": 0
+  }
+]
+Compile Time: 0.011s, Run Time: 0.166s, Total Time: 0.177s.

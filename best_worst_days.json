@@ -1,0 +1,63 @@
+[
+  {
+    "day1": "2026-03-07T00:00:00.000Z",
+    "avg_sleep_score": 89,
+    "avg_readiness_score": 93,
+    "avg_stress_high": 45000
+  },
+  {
+    "day1": "2026-01-01T00:00:00.000Z",
+    "avg_sleep_score": 86,
+    "avg_readiness_score": 92,
+    "avg_stress_high": 18000
+  },
+  {
+    "day1": "2026-01-15T00:00:00.000Z",
+    "avg_sleep_score": 89,
+    "avg_readiness_score": 91,
+    "avg_stress_high": 18000
+  },
+  {
+    "day1": "2025-12-30T00:00:00.000Z",
+    "avg_sleep_score": 84,
+    "avg_readiness_score": 91,
+    "avg_stress_high": 18900
+  },
+  {
+    "day1": "2026-01-10T00:00:00.000Z",
+    "avg_sleep_score": 90,
+    "avg_readiness_score": 91,
+    "avg_stress_high": 9000
+  },
+  {
+    "day1": "2025-12-27T00:00:00.000Z",
+    "avg_sleep_score": 82,
+    "avg_readiness_score": 91,
+    "avg_stress_high": 31500
+  },
+  {
+    "day1": "2026-01-20T00:00:00.000Z",
+    "avg_sleep_score": 90,
+    "avg_readiness_score": 90,
+    "avg_stress_high": 38700
+  },
+  {
+    "day1": "2025-12-03T00:00:00.000Z",
+    "avg_sleep_score": 86,
+    "avg_readiness_score": 90,
+    "avg_stress_high": 7200
+  },
+  {
+    "day1": "2025-12-15T00:00:00.000Z",
+    "avg_sleep_score": 90,
+    "avg_readiness_score": 90,
+    "avg_stress_high": 7200
+  },
+  {
+    "day1": "2026-01-08T00:00:00.000Z",
+    "avg_sleep_score": 91,
+    "avg_readiness_score": 89,
+    "avg_stress_high": 9000
+  }
+]
+Compile Time: 0.018s, Run Time: 0.055s, Total Time: 0.073s.

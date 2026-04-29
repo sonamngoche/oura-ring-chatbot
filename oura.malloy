@@ -1,0 +1,75 @@
+source: sleep is duckdb.table("Data/dailysleep.csv") extend {
+  primary_key: id
+  rename: day1 is `day`
+}
+
+source: readiness is duckdb.table("Data/dailyreadiness.csv") extend {
+  primary_key: id
+  rename: day1 is `day`
+}
+
+source: activity is duckdb.table("Data/dailyactivity.csv") extend {
+  primary_key: id
+  rename: day1 is `day`
+}
+
+source: stress is duckdb.table("Data/dailystress.csv") extend {
+  primary_key: id
+  rename: day1 is `day`
+  join_one: activity on activity.day1 = day1
+  join_one: readiness on readiness.day1 = day1
+  join_one: sleep on sleep.day1 = day1
+
+  measure:
+    readings is count()
+    avg_sleep_score is sleep.score.avg()
+    avg_readiness_score is readiness.score.avg()
+    avg_activity_score is activity.score.avg()
+    avg_stress_high is stress_high.avg()
+    avg_recovery_high is recovery_high.avg()
+
+  view: daily_summary is {
+    group_by: day1
+    aggregate:
+      avg_sleep_score
+      avg_readiness_score
+      avg_activity_score
+      avg_stress_high
+      avg_recovery_high
+  }
+
+  view: monthly_trends is {
+    group_by: day1.month
+    aggregate:
+      avg_sleep_score
+      avg_readiness_score
+      avg_activity_score
+      avg_stress_high
+      avg_recovery_high
+  }
+
+  view: stress_vs_recovery is {
+    group_by: day_summary
+    aggregate:
+      avg_stress_high
+      avg_recovery_high
+      avg_sleep_score
+  }
+
+  view: activity_detail is {
+    group_by: day1
+    aggregate:
+      avg_steps is activity.steps.avg()
+      avg_active_calories is activity.active_calories.avg()
+      avg_activity_score
+  }
+
+  view: best_worst_days is {
+    group_by: day1
+    aggregate:
+      avg_sleep_score
+      avg_readiness_score
+      avg_stress_high
+    order_by: avg_readiness_score desc
+  }
+}

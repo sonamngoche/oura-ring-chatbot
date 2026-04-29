@@ -1,0 +1,27 @@
+[
+  {
+    "day_summary": "stressful",
+    "avg_stress_high": 23534.579439252335,
+    "avg_recovery_high": 2758.878504672897,
+    "avg_sleep_score": 78.71134020618557
+  },
+  {
+    "day_summary": "normal",
+    "avg_stress_high": 7963.636363636364,
+    "avg_recovery_high": 6900,
+    "avg_sleep_score": 81.75862068965517
+  },
+  {
+    "day_summary": "restored",
+    "avg_stress_high": 6412.5,
+    "avg_recovery_high": 16200,
+    "avg_sleep_score": 79.28571428571429
+  },
+  {
+    "day_summary": null,
+    "avg_stress_high": 288,
+    "avg_recovery_high": 504,
+    "avg_sleep_score": 79.0909090909091
+  }
+]
+Compile Time: 0.043s, Run Time: 0.024s, Total Time: 0.067s.
