@@ -10,7 +10,8 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-load_dotenv()
+import streamlit as st
+# API key is handled by Streamlit Cloud secrets
 
 st.title("Oura Ring Health Chatbot")
 st.write("Ask me anything about your health data!")
