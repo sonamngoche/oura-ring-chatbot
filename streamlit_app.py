@@ -18,7 +18,7 @@ if "OPENAI_API_KEY" in st.secrets:
 st.title("Oura Ring Health Chatbot")
 st.write("Ask me anything about your health data!")
 
-@st.cache_resource
+@st.cache_resource(ttl=0)
 def load_chain():
     base_dir = os.path.dirname(os.path.abspath(__file__))
     files = glob.glob(os.path.join(base_dir, "*.json"))
