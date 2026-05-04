@@ -10,3 +10,9 @@ run: sleep -> { select: day1, score order_by: day1 limit: 1000 }
 run: readiness -> { select: day1, score order_by: day1 limit: 1000 }
 run: activity -> { select: day1, score, steps, active_calories order_by: day1 limit: 1000 }
 run: stress -> { select: day1, stress_high, recovery_high order_by: day1 limit: 1000 }
+
+run: sleep -> { 
+  select: day1, score 
+  order_by: score asc 
+  limit: 1000 
+}
