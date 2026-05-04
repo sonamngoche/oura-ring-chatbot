@@ -16,6 +16,8 @@ if "OPENAI_API_KEY" in st.secrets:
     os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 st.write("API key loaded:", "OPENAI_API_KEY" in os.environ)
+st.write("API key loaded:", "OPENAI_API_KEY" in os.environ)
+st.write("JSON files found:", glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "*.json")))
 
 st.title("Oura Ring Health Chatbot")
 st.write("Ask me anything about your health data!")
