@@ -1,0 +1,53 @@
+[
+  {
+    "day1": "2025-11-06T00:00:00.000Z",
+    "stress_high": "0",
+    "recovery_high": "0"
+  },
+  {
+    "day1": "2025-11-07T00:00:00.000Z",
+    "stress_high": "0",
+    "recovery_high": "0"
+  },
+  {
+    "day1": "2025-11-08T00:00:00.000Z",
+    "stress_high": "0",
+    "recovery_high": "0"
+  },
+  {
+    "day1": "2025-11-09T00:00:00.000Z",
+    "stress_high": "0",
+    "recovery_high": "0"
+  },
+  {
+    "day1": "2025-11-10T00:00:00.000Z",
+    "stress_high": "0",
+    "recovery_high": "0"
+  },
+  {
+    "day1": "2025-11-11T00:00:00.000Z",
+    "stress_high": "0",
+    "recovery_high": "0"
+  },
+  {
+    "day1": "2025-11-12T00:00:00.000Z",
+    "stress_high": "18900",
+    "recovery_high": "1800"
+  },
+  {
+    "day1": "2025-11-13T00:00:00.000Z",
+    "stress_high": "5400",
+    "recovery_high": "10800"
+  },
+  {
+    "day1": "2025-11-14T00:00:00.000Z",
+    "stress_high": "9900",
+    "recovery_high": "8100"
+  },
+  {
+    "day1": "2025-11-15T00:00:00.000Z",
+    "stress_high": "2700",
+    "recovery_high": "3600"
+  }
+]
+Compile Time: 0.073s, Run Time: 0.021s, Total Time: 0.094s.
