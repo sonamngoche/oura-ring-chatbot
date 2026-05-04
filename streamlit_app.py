@@ -18,6 +18,21 @@ if "OPENAI_API_KEY" in st.secrets:
 st.title("Oura Ring Health Chatbot")
 st.write("Ask me anything about your health data!")
 
+def convert_numbers(obj):
+    if isinstance(obj, dict):
+        return {k: convert_numbers(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_numbers(i) for i in obj]
+    elif isinstance(obj, str):
+        try:
+            return int(obj)
+        except ValueError:
+            try:
+                return float(obj)
+            except ValueError:
+                return obj
+    return obj
+
 @st.cache_resource(ttl=0)
 def load_chain():
     base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -31,25 +46,32 @@ def load_chain():
         while pos < len(content):
             try:
                 obj, idx = decoder.raw_decode(content, pos)
+                obj = convert_numbers(obj)
                 documents.append(Document(page_content=json.dumps(obj), metadata={"source": file}))
                 pos += idx
             except json.JSONDecodeError:
                 pos += 1
 
-    splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
+    splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
     docs = splitter.split_documents(documents)
 
     embeddings = OpenAIEmbeddings()
     vectorstore = Chroma.from_documents(docs, embeddings)
     llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
-    retriever = vectorstore.as_retriever()
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 10})
 
     prompt = ChatPromptTemplate.from_template("""
-    Answer the question based on the following health data context:
-    {context}
+You are a health data analyst. Answer the question based ONLY on the following health data context.
+Be specific with numbers and dates. If asked for minimums or maximums, scan ALL the data carefully.
+Do not make up data that is not in the context.
 
-    Question: {question}
-    """)
+Context:
+{context}
+
+Question: {question}
+
+Answer:
+""")
 
     chain = (
         {"context": retriever, "question": RunnablePassthrough()}
