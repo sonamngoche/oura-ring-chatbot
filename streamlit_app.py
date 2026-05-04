@@ -15,6 +15,8 @@ load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)),
 if "OPENAI_API_KEY" in st.secrets:
     os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
+st.write("API key loaded:", "OPENAI_API_KEY" in os.environ)
+
 st.title("Oura Ring Health Chatbot")
 st.write("Ask me anything about your health data!")
 
