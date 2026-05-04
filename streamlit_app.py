@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from langchain_core.documents import Document
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_community.vectorstores import Chroma
-from langchain_core.runnables import RunnablePassthrough, RunnableLambda
+from langchain_core.runnables import RunnablePassthrough
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
@@ -15,43 +15,14 @@ load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)),
 if "OPENAI_API_KEY" in st.secrets:
     os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
-st.write("API key loaded:", "OPENAI_API_KEY" in os.environ)
-st.write("API key loaded:", "OPENAI_API_KEY" in os.environ)
-st.write("JSON files found:", glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "*.json")))
-
 st.title("Oura Ring Health Chatbot")
 st.write("Ask me anything about your health data!")
 
-def convert_numbers(obj):
-    if isinstance(obj, dict):
-        return {k: convert_numbers(v) for k, v in obj.items()}
-    elif isinstance(obj, list):
-        return [convert_numbers(i) for i in obj]
-    elif isinstance(obj, str):
-        try:
-            return int(obj)
-        except ValueError:
-            try:
-                return float(obj)
-            except ValueError:
-                return obj
-    return obj
-
-def safe_get(obj, key):
-    try:
-        val = obj.get(key)
-        if val is not None and isinstance(val, (int, float)):
-            return val
-        return None
-    except:
-        return None
-
-@st.cache_resource(ttl=0)
+@st.cache_resource
 def load_chain():
     base_dir = os.path.dirname(os.path.abspath(__file__))
     files = glob.glob(os.path.join(base_dir, "*.json"))
     documents = []
-    all_data = []
     for file in files:
         with open(file, "r") as f:
             content = f.read()
@@ -60,52 +31,12 @@ def load_chain():
         while pos < len(content):
             try:
                 obj, idx = decoder.raw_decode(content, pos)
-                obj = convert_numbers(obj)
-                if isinstance(obj, dict):
-                    documents.append(Document(page_content=json.dumps(obj), metadata={"source": file}))
-                    all_data.append(obj)
+                documents.append(Document(page_content=json.dumps(obj), metadata={"source": file}))
                 pos += idx
             except json.JSONDecodeError:
                 pos += 1
 
-    # Pre-compute key stats safely
-    sleep_records = []
-    stress_records = []
-    step_records = []
-
-    for o in all_data:
-        if not isinstance(o, dict):
-            continue
-        day = o.get("day1", "")[:10] if o.get("day1") else ""
-        score = safe_get(o, "score")
-        stress = safe_get(o, "stress_high")
-        steps = safe_get(o, "steps")
-
-        if score and day and not stress and not steps:
-            sleep_records.append((day, score))
-        if stress and day:
-            stress_records.append((day, stress))
-        if steps and day:
-            step_records.append((day, steps))
-
-    stats_lines = []
-    if sleep_records:
-        min_s = min(sleep_records, key=lambda x: x[1])
-        max_s = max(sleep_records, key=lambda x: x[1])
-        stats_lines.append(f"Lowest sleep score: {min_s[1]} on {min_s[0]}")
-        stats_lines.append(f"Highest sleep score: {max_s[1]} on {max_s[0]}")
-    if step_records:
-        max_steps = max(step_records, key=lambda x: x[1])
-        stats_lines.append(f"Most steps in a day: {max_steps[1]} on {max_steps[0]}")
-    if stress_records:
-        max_stress = max(stress_records, key=lambda x: x[1])
-        min_stress = min(stress_records, key=lambda x: x[1])
-        stats_lines.append(f"Highest stress: {max_stress[1]} on {max_stress[0]}")
-        stats_lines.append(f"Lowest stress: {min_stress[1]} on {min_stress[0]}")
-
-    precomputed_stats = "\n".join(stats_lines) if stats_lines else "No stats available."
-
-    splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+    splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
     docs = splitter.split_documents(documents)
 
     embeddings = OpenAIEmbeddings()
@@ -114,10 +45,11 @@ def load_chain():
     retriever = vectorstore.as_retriever(search_kwargs={"k": 10})
 
     prompt = ChatPromptTemplate.from_template("""
-You are a health data analyst. Here are pre-computed key stats from the full dataset:
-{stats}
+You are a health data analyst. Answer the question based ONLY on the following health data context.
+Be specific with numbers and dates. If asked for minimums or maximums, scan ALL the data carefully.
+Do not make up data that is not in the context.
 
-Answer the question based on the stats above and the following additional context:
+Context:
 {context}
 
 Question: {question}
@@ -126,11 +58,7 @@ Answer:
 """)
 
     chain = (
-        {
-            "context": retriever,
-            "question": RunnablePassthrough(),
-            "stats": RunnableLambda(lambda _: precomputed_stats)
-        }
+        {"context": retriever, "question": RunnablePassthrough()}
         | prompt
         | llm
     )
