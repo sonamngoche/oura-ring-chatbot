@@ -1,11 +1,11 @@
 >>>malloy
 import "oura.malloy"
 
-run: stress -> daily_summary
-run: stress -> monthly_trends
-run: stress -> stress_vs_recovery
-run: stress -> activity_detail
-run: stress -> best_worst_days
+run: oura_all -> daily_summary
+run: oura_all -> monthly_trends
+run: oura_all -> stress_vs_recovery
+run: oura_all -> activity_detail
+run: oura_all -> best_worst_days
 run: sleep -> { select: day1, score order_by: day1 limit: 1000 }
 run: readiness -> { select: day1, score order_by: day1 limit: 1000 }
 run: activity -> { select: day1, score, steps, active_calories order_by: day1 limit: 1000 }

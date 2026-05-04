@@ -3,49 +3,49 @@
     "day1": "2026-04-01T00:00:00.000Z",
     "avg_sleep_score": 82.31818181818181,
     "avg_readiness_score": 64.77272727272727,
-    "avg_activity_score": 77.73684210526316,
-    "avg_stress_high": 12600,
-    "avg_recovery_high": 3633.3333333333335
+    "avg_activity_score": 78.9375,
+    "avg_stress_high": 14522.727272727272,
+    "avg_recovery_high": 4090.909090909091
   },
   {
     "day1": "2026-03-01T00:00:00.000Z",
     "avg_sleep_score": 79.25,
     "avg_readiness_score": 72.03571428571429,
-    "avg_activity_score": 68.4,
-    "avg_stress_high": 24996.774193548386,
-    "avg_recovery_high": 1887.0967741935483
+    "avg_activity_score": 68.52173913043478,
+    "avg_stress_high": 26357.14285714286,
+    "avg_recovery_high": 1928.5714285714287
   },
   {
     "day1": "2026-02-01T00:00:00.000Z",
     "avg_sleep_score": 77.04,
     "avg_readiness_score": 66.2,
-    "avg_activity_score": 79.55555555555556,
-    "avg_stress_high": 19446.428571428572,
-    "avg_recovery_high": 2989.285714285714
+    "avg_activity_score": 79.375,
+    "avg_stress_high": 18828,
+    "avg_recovery_high": 3096
   },
   {
     "day1": "2026-01-01T00:00:00.000Z",
     "avg_sleep_score": 79.5,
     "avg_readiness_score": 78.78571428571429,
-    "avg_activity_score": 59.1,
-    "avg_stress_high": 20409.677419354837,
-    "avg_recovery_high": 4209.677419354839
+    "avg_activity_score": 58.25,
+    "avg_stress_high": 21857.14285714286,
+    "avg_recovery_high": 4628.571428571428
   },
   {
     "day1": "2025-12-01T00:00:00.000Z",
     "avg_sleep_score": 80.05263157894737,
     "avg_readiness_score": 84,
-    "avg_activity_score": 49.07692307692308,
-    "avg_stress_high": 13093.548387096775,
-    "avg_recovery_high": 4761.290322580645
+    "avg_activity_score": 47.73684210526316,
+    "avg_stress_high": 18710.526315789473,
+    "avg_recovery_high": 6015.789473684211
   },
   {
     "day1": "2025-11-01T00:00:00.000Z",
     "avg_sleep_score": 78.54545454545455,
     "avg_readiness_score": 80.81818181818181,
-    "avg_activity_score": 67.3,
-    "avg_stress_high": 5652,
-    "avg_recovery_high": 5868
+    "avg_activity_score": 66,
+    "avg_stress_high": 6054.545454545455,
+    "avg_recovery_high": 6381.818181818182
   }
 ]
-Compile Time: 0.01s, Run Time: 0.131s, Total Time: 0.141s.
+Compile Time: 0.016s, Run Time: 0.144s, Total Time: 0.16s.

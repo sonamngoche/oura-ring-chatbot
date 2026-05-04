@@ -1,27 +1,27 @@
 [
   {
     "day_summary": "stressful",
-    "avg_stress_high": 23534.579439252335,
-    "avg_recovery_high": 2758.878504672897,
+    "avg_stress_high": 24105.154639175256,
+    "avg_recovery_high": 2746.3917525773195,
     "avg_sleep_score": 78.71134020618557
   },
   {
     "day_summary": "normal",
-    "avg_stress_high": 7963.636363636364,
-    "avg_recovery_high": 6900,
+    "avg_stress_high": 8348.275862068966,
+    "avg_recovery_high": 7293.103448275862,
     "avg_sleep_score": 81.75862068965517
   },
   {
     "day_summary": "restored",
-    "avg_stress_high": 6412.5,
-    "avg_recovery_high": 16200,
+    "avg_stress_high": 5914.285714285715,
+    "avg_recovery_high": 16585.714285714286,
     "avg_sleep_score": 79.28571428571429
   },
   {
     "day_summary": null,
-    "avg_stress_high": 288,
-    "avg_recovery_high": 504,
+    "avg_stress_high": 654.5454545454545,
+    "avg_recovery_high": 1063.6363636363637,
     "avg_sleep_score": 79.0909090909091
   }
 ]
-Compile Time: 0.043s, Run Time: 0.024s, Total Time: 0.067s.
+Compile Time: 0.018s, Run Time: 0.082s, Total Time: 0.1s.

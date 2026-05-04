@@ -16,17 +16,20 @@ source: activity is duckdb.table("Data/dailyactivity.csv") extend {
 source: stress is duckdb.table("Data/dailystress.csv") extend {
   primary_key: id
   rename: day1 is `day`
+}
+
+source: oura_all is sleep extend {
   join_one: activity on activity.day1 = day1
   join_one: readiness on readiness.day1 = day1
-  join_one: sleep on sleep.day1 = day1
+  join_one: stress on stress.day1 = day1
 
   measure:
     readings is count()
-    avg_sleep_score is sleep.score.avg()
+    avg_sleep_score is score.avg()
     avg_readiness_score is readiness.score.avg()
     avg_activity_score is activity.score.avg()
-    avg_stress_high is stress_high.avg()
-    avg_recovery_high is recovery_high.avg()
+    avg_stress_high is stress.stress_high.avg()
+    avg_recovery_high is stress.recovery_high.avg()
 
   view: daily_summary is {
     group_by: day1
@@ -49,7 +52,7 @@ source: stress is duckdb.table("Data/dailystress.csv") extend {
   }
 
   view: stress_vs_recovery is {
-    group_by: day_summary
+    group_by: stress.day_summary
     aggregate:
       avg_stress_high
       avg_recovery_high
