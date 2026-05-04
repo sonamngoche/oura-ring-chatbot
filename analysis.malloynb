@@ -6,7 +6,7 @@ run: stress -> monthly_trends
 run: stress -> stress_vs_recovery
 run: stress -> activity_detail
 run: stress -> best_worst_days
-run: sleep -> { select: day1, score order_by: day1 }
-run: readiness -> { select: day1, score order_by: day1 }
-run: activity -> { select: day1, score, steps order_by: day1 }
-run: stress -> { select: day1, stress_high, recovery_high order_by: day1 }
+run: sleep -> { select: day1, score order_by: day1 limit: 1000 }
+run: readiness -> { select: day1, score order_by: day1 limit: 1000 }
+run: activity -> { select: day1, score, steps, active_calories order_by: day1 limit: 1000 }
+run: stress -> { select: day1, stress_high, recovery_high order_by: day1 limit: 1000 }
